@@ -9,7 +9,7 @@ depend() {
 
 start() {
     ebegin "Starting pvr-omap4"
-    /usr/bin/pvrsrvinit
+    /usr/bin/pvrsrvctl --start --no-module
 }
 
 stop() {
